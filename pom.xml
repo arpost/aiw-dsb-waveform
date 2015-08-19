@@ -6,6 +6,11 @@
     <artifactId>aiw-dsb-waveform</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <inceptionYear>2015</inceptionYear>
+    <organization>
+        <name>Emory University</name>
+        <url>http://www.emory.edu</url>
+    </organization>
 
     <name>Waveform Data Source Backend</name>
     <url>http://maven.apache.org</url>
@@ -13,6 +18,54 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
+    <scm>
+        <developerConnection>scm:git:ssh://git.cci.emory.edu/opt/git/aiw/aiw-dsb-waveform.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://jira.cci.emory.edu:8080/jira/secure/Dashboard.jspa</url>
+    </issueManagement>
+    
+    <distributionManagement>
+        <site>
+            <id>aiw.sourceforge.net</id>
+            <url>scp://shell.sourceforge.net/home/project-web/aiw/htdocs/dev/${project.build.finalName}</url>
+        </site>
+        <repository>
+            <id>aiw</id>
+            <name>AIW Repo</name>
+            <url>http://maven.cci.emory.edu/nexus/content/repositories/aiw/</url>
+        </repository>
+        <snapshotRepository>
+            <id>aiw-snapshots</id>
+            <name>AIW Snapshots Repo</name>
+            <url>http://maven.cci.emory.edu/nexus/content/repositories/aiw-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>manual</distribution>
+        </license>
+    </licenses>
+    
+    <repositories>
+        <repository>
+            <id>maven.cci</id>
+            <name>BMI Maven Repository</name>
+            <url>http://maven.cci.emory.edu/nexus/content/repositories/public</url>
+        </repository>
+        <repository>
+            <id>aiw.repo</id>
+            <name>AIW Release Repository</name>
+            <url>http://maven.cci.emory.edu/nexus/content/repositories/aiw/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
