@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
 import org.protempa.BackendCloseException;
-import org.protempa.DataSourceBackendCloseException;
 import org.protempa.backend.annotations.BackendInfo;
 import org.protempa.backend.dsb.relationaldb.ColumnSpec;
 import org.protempa.backend.dsb.relationaldb.Operator;
@@ -161,7 +160,7 @@ public class WaveformDataSourceBackend extends RelationalDbDataSourceBackend {
             this.annotationMappings.close();
             annotationMappingsClosed = true;
         } catch (IOException ex) {
-            throw new DataSourceBackendCloseException(ex);
+            throw new BackendCloseException(ex);
         } finally {
             if (!annotationMappingsClosed) {
                 try {
