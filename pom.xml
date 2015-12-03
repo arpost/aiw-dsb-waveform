@@ -20,7 +20,7 @@
     </properties>
     
     <scm>
-        <developerConnection>scm:git:ssh://git.cci.emory.edu/opt/git/aiw/aiw-dsb-waveform.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/eurekaclinical/aiw-dsb-waveform.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
