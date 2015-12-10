@@ -3,7 +3,7 @@
 
     <groupId>edu.emory.cci</groupId>
     <artifactId>aiw-dsb-waveform</artifactId>
-    <version>1.0-Alpha-3-SNAPSHOT</version>
+    <version>1.0-Alpha-2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <inceptionYear>2015</inceptionYear>
     <parent>
