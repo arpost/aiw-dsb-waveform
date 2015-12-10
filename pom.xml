@@ -9,7 +9,7 @@
     <parent>
         <groupId>org.eurekaclinical</groupId>
         <artifactId>eurekaclinical-parent</artifactId>
-        <version>1-SNAPSHOT</version>
+        <version>1-Alpha-4</version>
     </parent>
 
     <name>Waveform Data Source Backend</name>
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>org.eurekaclinical</groupId>
             <artifactId>protempa-dsb-relationaldb</artifactId>
-            <version>3.0-Alpha-5-SNAPSHOT</version>
+            <version>3.0-Alpha-5</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
